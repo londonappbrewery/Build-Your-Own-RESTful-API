@@ -20,7 +20,7 @@
     "_id" : ObjectId("5c1398ecd79ac8eac11e7567"),
     "title" : "DOM",
     "content" : "The Document Object Model is like an API for interacting with our HTML"
-}
+}```
 
 ## Server Starting Code
 
@@ -45,3 +45,4 @@ app.use(express.static("public"));
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
+```
