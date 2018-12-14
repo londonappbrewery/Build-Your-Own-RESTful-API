@@ -20,11 +20,13 @@
     "_id" : ObjectId("5c1398ecd79ac8eac11e7567"),
     "title" : "DOM",
     "content" : "The Document Object Model is like an API for interacting with our HTML"
-}```
+}
+```
 
 ## Server Starting Code
 
-```//jshint esversion:6
+```
+//jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
