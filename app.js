@@ -25,6 +25,8 @@ const articleSchema = {
 
 const Article = mongoose.model("Article", articleSchema);
 
+/////////////////////////All Articles///////////////////////////////////
+
 app.route("/articles")
 
 
@@ -67,7 +69,9 @@ app.route("/articles")
 });
 
 
-app.route("articles/:articleTitle")
+/////////////////////////Individual Articles///////////////////////////////////
+
+app.route("/articles/:articleTitle")
 
 .get(function(req, res){
   const articleTitle = req.params.articleTitle;
@@ -83,7 +87,7 @@ app.route("articles/:articleTitle")
 
 .patch(function(req, res){
   const articleTitle = req.params.articleTitle;
-  Article.findOneAndUpdate(
+  Article.update(
     {title: articleTitle},
     {content: req.body.newContent},
     function(err){
@@ -99,7 +103,7 @@ app.route("articles/:articleTitle")
 
   const articleTitle = req.params.articleTitle;
 
-  Article.findOneAndUpdate(
+  Article.update(
     {title: articleTitle},
     {content: req.body.newContent},
     {overwrite: true},
