@@ -56,7 +56,7 @@ app.listen(3000, function() {
 {
     "_id" : "5c18e1892998bdb3b3d355bf",
     "title" : "REST",
-    "content" : "REST is short for REpresentational State Transfer. IIt's an architectural style for designing APIs."
+    "content" : "REST is short for REpresentational State Transfer. It's an architectural style for designing APIs."
 }
 
 
@@ -84,7 +84,7 @@ app.listen(3000, function() {
 {
     "_id" : "5c18f35cde40ab6cc551cd60",
     "title" : "Jack Bauer",
-    "content" : "Jack Bauer once stepped into quicksand. The quicksand couldn't escape and nearly drowned.",
+    "content" : "Jack Bauer once stepped into quicksand. Jack Bauer couldn't escape and nearly drowned.",
     "__v" : 0
 }
 ```
