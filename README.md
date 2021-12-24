@@ -1,4 +1,4 @@
-# Build-Your-Own-RESTful-API
+# Build Your Own RESTful API
 
 ## Example Documents
 ```
