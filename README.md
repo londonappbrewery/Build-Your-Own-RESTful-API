@@ -1,5 +1,24 @@
 # Build-Your-Own-RESTful-API
 
+## collection.update is deprecated.
+```
+// Replace this:
+MyModel.update({ foo: 'bar' }, { answer: 42 });
+// With this:
+MyModel.updateOne({ foo: 'bar' }, { answer: 42 });
+
+// If you use `overwrite: true`, you should use `replaceOne()` instead:
+MyModel.update(filter, update, { overwrite: true });
+// Replace with this:
+MyModel.replaceOne(filter, update);
+
+// If you use `multi: true`, you should use `updateMany()` instead:
+MyModel.update(filter, update, { multi: true });
+// Replace with this:
+MyModel.updateMany(filter, update);
+
+```
+
 ## Example Documents
 ```
 {
