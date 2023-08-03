@@ -1,6 +1,6 @@
 # Build-Your-Own-RESTful-API
 
-## Example Documents
+### Example Documents
 ```
 {
     "_id" : ObjectId("5c139771d79ac8eac11e754a"),
@@ -26,7 +26,6 @@
 ## Server Starting Code
 
 ```
-//jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -44,7 +43,7 @@ app.use(express.static("public"));
 
 //TODO
 
-app.listen(3000, function() {
+app.listen(3000, ()=> {
   console.log("Server started on port 3000");
 });
 ```
